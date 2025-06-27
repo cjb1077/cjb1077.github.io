@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Project – Home</title>
+
+  <!-- Basic, optional styling -->
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+    h1   { margin-top: 0; }
+    section { margin-bottom: 2.5rem; }
+    .pdf-wrapper { display: flex; flex-direction: column; gap: 2rem; }
+    /*  ⇧ change flex-direction to 'row' if you prefer the PDFs side-by-side */
+    embed, iframe { width: 100%; height: 600px; border: 1px solid #ccc; }
+  </style>
+</head>
+
+<body>
+  <!-- ===== TITLE SECTION ===== -->
+  <header>
+    <h1>My Project Title</h1>
+  </header>
+
+  <!-- ===== INTRODUCTION SECTION ===== -->
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>
+      Briefly explain what this page (or your project) is about.  
+      You can include links, images, or anything else here.
+    </p>
+  </section>
+
+  <!-- ===== PDF DISPLAY SECTION ===== -->
+  <section id="documents">
+    <h2>Documents</h2>
+
+    <div class="pdf-wrapper">
+      <!-- PDF #1 -->
+      <embed src="DSforMarketingPresentation.pdf" type="application/pdf" />
+
+      <!-- PDF #2 -->
+      <embed src="DSforMarketingReport.pdf" type="application/pdf" />
+      <!-- You can swap <embed> for <iframe> if you prefer: -->
+      <!-- <iframe src="second-document.pdf"></iframe> -->
+    </div>
+  </section>
+</body>
+</html>
