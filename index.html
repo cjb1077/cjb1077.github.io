@@ -191,6 +191,15 @@
   </style>
 
   <script defer data-domain="cjb1077.github.io" src="https://plausible.io/js/script.js"></script>
+  <script>
+  // Send custom events to Plausible when users click your PDF links
+  document.addEventListener('click', function(e) {
+    const a = e.target.closest('a[href$=".pdf"]');
+    if (!a || typeof plausible !== 'function') return;
+    const label = a.getAttribute('href');
+    plausible('PDF Click', { props: { file: label, action: a.hasAttribute('download') ? 'download' : 'open' }});
+  });
+</script>
 </head>
 <body>
 
