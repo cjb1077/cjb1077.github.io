@@ -243,6 +243,7 @@
     <div class="nav-inner">
       <span><span class="prompt-glyph">&gt;</span> cj-bingham</span>
       <a href="#projects">--projects</a>
+      <a href="#research">--research</a>
       <a href="#gallery">--gallery</a>
       <a href="#contact">--contact</a>
       <span class="cursor" aria-hidden="true">&nbsp;</span>
@@ -258,7 +259,7 @@
           <h1>CJ Bingham</h1>
           <p class="role">Software Engineer &amp; AI Researcher</p>
           <p class="bio">
-            Software engineer and grant-funded AI researcher with experience in Agentic software development with MCP servers, LLM integration, and RAG.
+            Computer Science student at FAU with a public administration background and 2.5 years in technical recruiting, hiring software architects and consulting with IT directors, managers, and C-suite, with exposure to 150+ client architectures, tech stacks, and greenfield projects. Builds well-researched, full-stack software using industry-standard tools and agentic AI development with Claude Code. Top presenter in the FAU AI Hootcamp with industry partner Symbern. Member of FAU's AI, Innovation, and Public Good VIP research team, with an AI-in-child-welfare review accepted to SSWR 2027.
           </p>
           <div class="cta-row">
             <a class="chip primary" href="#projects">View Projects</a>
@@ -269,12 +270,13 @@
 
         <div class="spec-sheet reveal is-visible" style="--i:1" aria-label="Skills">
           <dl style="margin:0">
-            <div class="row"><dt>Languages</dt><dd>Python · SQL · C++</dd></div>
-            <div class="row"><dt>Data / ML</dt><dd>Pandas · NumPy · SciPy · statsmodels · Clustering · Regression · ARIMA</dd></div>
-            <div class="row"><dt>Viz</dt><dd>Matplotlib · Seaborn · Jupyter</dd></div>
-            <div class="row"><dt>AI / LLM</dt><dd>LLMs · RAG · LangChain · OpenAI API</dd></div>
-            <div class="row"><dt>Databases</dt><dd>Postgres · Azure SQL · MySQL · Supabase</dd></div>
-            <div class="row"><dt>Tooling</dt><dd>Git · GitHub · GitHub Actions · Windows &amp; Linux</dd></div>
+            <div class="row"><dt>Languages</dt><dd>Python · SQL · TypeScript/JavaScript · C++</dd></div>
+            <div class="row"><dt>Data / ML</dt><dd>Jupyter · Pandas · NumPy · SciPy · statsmodels · matplotlib · Excel</dd></div>
+            <div class="row"><dt>Backend</dt><dd>FastAPI</dd></div>
+            <div class="row"><dt>AI / LLM</dt><dd>Claude Code (agentic dev, custom skills) · ChatGPT · LangChain</dd></div>
+            <div class="row"><dt>Databases</dt><dd>PostgreSQL/PostGIS · MSSQL · MySQL · Azure Data Studio · MySQL Workbench · DBeaver</dd></div>
+            <div class="row"><dt>Infra</dt><dd>Docker · Self-hosted server deployment · Linux (Ubuntu Server, Red Hat) · Windows</dd></div>
+            <div class="row"><dt>Tooling</dt><dd>Git · GitHub · GitHub Actions</dd></div>
           </dl>
         </div>
       </div>
@@ -288,24 +290,63 @@
       <div class="project-grid">
 
         <article class="card featured reveal" style="--i:0">
-          <span class="badge">Live Product</span>
-          <h3>MonoSpace Studio — ASCII Art Generator</h3>
-          <p>Built and deployed a full-stack application at <a class="link" href="https://monospacestudio.netlify.app" target="_blank" rel="noopener">monospacestudio.netlify.app</a> that uses LLM integration to generate ASCII art from user prompts. Developed with AI-native tooling: Devin, Antigravity CLI, MCP servers, and Supabase for backend, auth, and data.</p>
-          <div class="stack">LLM Integration · Supabase · Full-Stack Deployment · Prompt Engineering</div>
+          <span class="badge">AI Hootcamp · Top-6 Presenter</span>
+          <h3>RouteContext — Freight Logistics Intelligence Platform</h3>
+          <p>Built <strong>routecontext.com</strong> for the AI Hootcamp (Symbern × FAU, 2026; top-6 presenter out of 150 sign-ups): a geospatial platform that puts live weather, national road geometry, and truck routing on one linear-referencing spine (roadway + milepost), making route risk a single deterministic SQL query.</p>
+          <p>Natural-language analytics use Claude forced tool-use to yield schema-validated Cube queries, never raw SQL. The layered PostGIS warehouse (51 versioned migrations) loads federal datasets (HPMS, NBI, FAF5, truck parking) through a YAML-driven, idempotent ingestion framework, and scaled from one Florida district to the continental U.S. with self-hosted Valhalla truck routing and NWS weather. Deployed 7+ Docker Compose services behind Caddy HTTPS on Ubuntu with API-key/JWT auth, row-level security, LLM rate and cost limits, and ~70 test-first modules, on a 100% open-source, commercially licensable stack.</p>
+          <div class="stack">Python · FastAPI · PostgreSQL/PostGIS · Cube · Claude API · Next.js · Docker</div>
         </article>
 
         <article class="card reveal" style="--i:1">
-          <span class="badge">FAU Research</span>
-          <h3>AI for Enhancing Child Welfare</h3>
-          <p>Serving on a multidisciplinary, grant-funded team developing a human-centered generative AI assistant to translate unstructured child welfare research into actionable insights. Co-authoring the team's inaugural publication at the intersection of data science, AI, and social work.</p>
-          <div class="stack">Python · AI/LLM · Data Analysis · Publication</div>
+          <span class="badge">Deployed Product</span>
+          <h3>MonoSpace Studio — ASCII Art Generator</h3>
+          <p>Built and deployed a full-stack application at <a class="link" href="https://monospacestudio.netlify.app" target="_blank" rel="noopener">monospacestudio.netlify.app</a> that uses LLM integration to generate ASCII art from NASA images. Developed with AI-native tooling: Devin, Antigravity CLI, MCP servers, and Supabase for backend, auth, and data.</p>
+          <div class="stack">LLM Integration · Supabase · Full-Stack Deployment</div>
         </article>
 
-        <article class="card reveal" style="--i:2">
+        <article class="card reveal" style="--i:2; grid-column: 1 / -1">
           <span class="badge">FAU</span>
           <h3>All of Us Research Program — Data Engineering Hackathon</h3>
           <p>Competed on a team of 5 using the NIH All of Us Research Program dataset. Visualized feature importance in predicting Sickle Cell Trait risk across demographic factors and presented findings to local executives in Precision Medicine.</p>
           <div class="stack">Python · Pandas · matplotlib · Jupyter · Feature Importance</div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-head">
+        <h2>Research</h2>
+        <span class="meta">AI, Innovation, and Public Good VIP · FAU · Dec 2025 – Present</span>
+      </div>
+      <div class="project-grid">
+
+        <article class="card featured reveal" style="--i:0">
+          <span class="badge">SSWR 2027 · Accepted</span>
+          <h3>AI in Child Welfare — Review</h3>
+          <p>Contributed to a review of AI in child welfare; presented at FAU and accepted for presentation at the Society for Social Work and Research (SSWR) 2027 Annual Conference, San Francisco, January 2027.</p>
+          <div class="stack">Literature Review · AI · Child Welfare · Publication</div>
+        </article>
+
+        <article class="card reveal" style="--i:1">
+          <span class="badge">In Progress</span>
+          <h3>AI &amp; Wearables in Substance Use Research</h3>
+          <p>Contributing to a review of AI applications and wearables in substance use research.</p>
+          <div class="stack">Literature Review · AI · Wearables</div>
+        </article>
+
+        <article class="card reveal" style="--i:2">
+          <span class="badge">Project Manager</span>
+          <h3>AI Dashboard — CCOULD Dataset</h3>
+          <p>Project manager for a new AI dashboard project built on the protected CCOULD dataset.</p>
+          <div class="stack">Project Management · AI · Protected Data</div>
+        </article>
+
+        <article class="card featured reveal" style="--i:3">
+          <span class="badge">Launching</span>
+          <h3>NSDUH Data Science Project</h3>
+          <p>Launching a data science project using the National Survey on Drug Use and Health (NSDUH) dataset.</p>
+          <div class="stack">Python · Data Science · NSDUH</div>
         </article>
 
       </div>
